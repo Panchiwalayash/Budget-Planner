@@ -1,0 +1,81 @@
+.AddBudget{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    top: 15vh;
+    justify-content: center; 
+    z-index: 2;
+}
+.BudgetSection{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height:200px;
+    width: 550px;
+    background-color:  aliceblue;
+    justify-content: center;
+    display: flex;
+}
+.set-budget{
+    margin-top: 20px;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.BudgetSection .text{
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+.input-budget input{
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 10px;
+}
+.input-budget input:focus{
+    outline: none;
+}
+.input-budget button{
+    padding: 5px 10px;
+    background-color: rgb(6, 68, 236);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.input-budget button:hover{
+    background-color: rgb(15, 112, 247);
+}
+@media only screen and (max-width:650px){
+    .BudgetSection{
+        height:250px;
+        width: 350px;
+    }
+}
+@media only screen and (max-width:400px){
+    .BudgetSection{
+        height:250px;
+        width: 200px;
+    }
+    .BudgetSection .text{
+        font-size: 14px;
+    }
+    .input-budget{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-budget input{
+        font-size: 13px;
+        margin-bottom: 10px;
+        width: 120px;
+
+    }
+    .input-budget button{
+        padding: 3px 5px;
+        font-size: 14px;
+        width: 70px;
+    }
+}

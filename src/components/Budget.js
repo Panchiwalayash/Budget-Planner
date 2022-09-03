@@ -4,7 +4,7 @@ import { AppContext } from '../context/AppContext'
 export default function Budget() {
   const {budget}=useContext(AppContext)
   return (
-    <div className='alert alert-secondary'>
+    <div >
       <span>Budget: ${budget}</span>
     </div>
   )

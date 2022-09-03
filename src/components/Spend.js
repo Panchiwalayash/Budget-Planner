@@ -9,7 +9,7 @@ const Spend = () => {
 	}, 0);
 
 	return (
-		<div className='alert alert-primary p-4'>
+		<div >
 			<span>Spent: ${total}</span>
 		</div>
 	);

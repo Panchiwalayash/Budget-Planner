@@ -18,7 +18,7 @@ const AppReducer=(state,action)=>{
     }
 }
 const INITIAL_State={
-    budget:20000,
+    budget:localStorage.getItem('budget'),
     expenses:[
 ]
 }
