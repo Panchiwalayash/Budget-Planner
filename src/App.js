@@ -14,6 +14,10 @@ export default function App() {
 
     const [display,setDisplay]=useState(true)
 
+    const resetHandler=()=>{
+        localStorage.clear()
+        window.location.reload()
+    }
     useEffect ( ()=> { 
         const visibilty=()=>{
             if(localStorage.getItem('budget')){
@@ -22,11 +26,13 @@ export default function App() {
         }
         visibilty()
      } , [])
+     
     return (
         <div className='container'>
             { display&&<AddBudget/>}
             <div className={"mainContent "+(display?"active":"")}>
             <h1 >Plan your Budget</h1>
+            <div className="resetBtn" onClick={resetHandler}>Reset Budget</div>
             <div className="content-container">
                 <div className="content-section budget">
                     <Budget />

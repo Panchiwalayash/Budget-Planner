@@ -5,7 +5,7 @@ export const AddBudget = () => {
 
   const budgetRef=useRef()
   const SaveBudget=()=>{
-    if(budgetRef.current.value<1){
+    if(budgetRef.current.value<1 || isNaN(budgetRef.current.value)){
        alert("please enter valid amount")
     }
     else{

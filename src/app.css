@@ -42,9 +42,32 @@
     background-color: rgb(137, 235, 137);
     margin-bottom: 3vh;
 }
+.resetBtn{
+    position: absolute;
+    right: 0;
+    margin: 2vh 4vw;
+    padding: 3px 5px;
+    background-color: rgb(25, 109, 244);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.resetBtn:hover{
+    transform: scale(1.1);
+}
 @media only screen and (max-width:1000px) {
     .content-container{
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .resetBtn{
+        bottom: 25px;
+        right: 0;
+        margin: 2vh 4vw;
+        padding: 3px 5px;
     }
 }
